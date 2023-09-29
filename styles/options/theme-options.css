@@ -1,0 +1,923 @@
+#glm-theme-options .section .field.hide-glm-field {
+    display: none !important;
+}
+
+.glm-style-box {
+    display: block;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+}
+
+.glm-style-box .title {
+    margin-bottom: 0 !important;
+    border: 0 !important;
+}
+
+.glm-padding {
+    width: 66%;
+    display: block;
+    text-align: center;
+    font-size: 0;
+}
+
+
+.glm-padding .line {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.glm-padding .line .column {
+    width: 32% !important;
+    float: left;
+}
+
+.glm-padding .line .column.directions i {
+    font-size: 24px;
+    position: relative;
+    top: 9px;
+    color: #c9854c;
+}
+
+.glm-padding .line .column input {
+    width: 84px !important;
+	text-align: center;
+}
+
+.glm-padding .line .column input::placeholder {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+}
+
+/* */
+
+.glm-font-box {
+    display: block;
+}
+
+.glm-font-box .glm-font-select {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.glm-font-box .glm-font-prev {
+    display: block;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+} 
+
+.glm-font-box .glm-font-prev textarea {
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 18px; 
+    background: transparent; 
+}
+
+.glm-font-box .glm-font-styles .col {
+    float: left;
+    width: 33%;
+    padding-right: 12px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #c9854c;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.glm-font-box .glm-font-styles .col.value input {
+    border-radius: 0 !important;
+    border-width: 0 0 1px;
+}
+
+.glm-font-box .glm-font-styles .col.color {
+    width: 100%;
+    text-align: left;
+}
+
+.glm-font-box .glm-font-styles .col.color input {
+    text-align: left;
+}
+
+.glm-font-box .glm-font-styles .col input {
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* =========================================================== */
+/* THEME OPTIONS CSS
+/* =========================================================== */
+
+/* Resets */
+
+body {
+	background: #efefef !important;
+	overflow: auto !important;
+}
+
+input, select, textarea, button {
+	outline-width: 0;
+}
+
+#wpfooter {
+    display: none;
+}
+
+/* Golem Wrapper */
+
+.golem-wrap {
+    display: block;
+    padding: 114px 30px 30px 10px;
+    width: 1143px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Golem Header */
+
+.glm-header {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    padding: 13px 31px 13px 188px;
+    box-sizing: border-box;
+    top: 32px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+	
+body.folded .glm-header {
+    padding: 13px 31px 13px 62px;
+}
+
+.glm-header .menu {
+    font-size: 25px;
+    position: relative;
+    top: -4px;
+    color: #ccc;
+}
+
+.glm-header .menu i {
+	cursor: pointer;
+}
+
+.glm-header .menu ul {
+    display: none;
+}
+
+.glm-header .menu ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+}
+
+.glm-header .menu ul {
+    position: absolute;
+    width: 230px;
+    top: 9px;
+    left: -10px;
+    padding: 12px 20px 16px;
+    border-radius: 10px;
+    margin: 0;
+    z-index: 100;
+    background: #FFF;
+}
+
+.glm-header .logo {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 160px;
+    height: 40px;
+    background: url(/wp-content/uploads/2019/05/golem-logo-v3.png) no-repeat center;
+    background-size: 126px;
+}
+
+.glm-header .logo .version {
+    padding: 1px 4px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    top: 22px;
+    right: -23px;
+    color: #999;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+}
+
+.glm-header .btn {
+    float: right;
+    margin-top: 5px;
+}
+	
+.glm-header .btn > * {
+    float: right;
+    margin-left: 17px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 11px 30px;
+    text-decoration: none!important;
+    position: relative;
+    font-weight: 500;
+    transition: .3s;
+}
+	
+.glm-header .btn a {
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    padding: 6px 16px;
+    margin-top: 7px;
+    margin-left: 8px;
+}
+
+.golem-wrap .glm-menu {
+    float: left;
+    width: 20%;
+    padding-right: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+	margin-right: -2px;
+}
+	
+.glm-header .btn a.theme-switch {
+    padding: 2px;
+    border: 0;
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    color: #ddd;
+}
+
+.glm-header .btn a.theme-switch label {
+    margin-left: 6px;
+}
+
+.glm-header .btn a.theme-switch input {
+	display: none;
+}
+
+.golem-wrap .glm-menu ul {
+    margin: 0;
+}
+	
+.golem-wrap .glm-menu li i {
+    margin-right: 5px;
+}
+	
+.golem-wrap .glm-menu li a {
+    background: #FFF;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 30px 0px 0 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa;
+    margin-bottom: 10px;
+    transition: .3s;
+    outline-width: 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.05);*/
+}
+	
+.golem-wrap .glm-menu li a:hover {
+    background: #fff;
+    color: #c9854c;
+}
+	
+.golem-wrap .glm-menu li a.active, .golem-wrap .glm-menu li a.active:hover {
+    color: #fff;
+    background: #c9854c;
+}
+
+/* Golem Save Settings */
+
+.golem-wrap .save[disabled], .glm-header .btn a.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+	
+.successModal {
+    display: block;
+    position: fixed;
+    left: 195px;
+    bottom: 34px;
+    padding: 15px 28px;
+    border-radius: 10px;
+    background-color: #609622;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.successModal:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    margin-right: 10px;
+    font-size: 18px;
+}
+	
+body.folded .successModal {
+    left: 74px;
+}
+
+
+/* Golem Body */
+	
+.golem-wrap .glm-body {
+    width: 80%;
+	min-height: 1000px;
+    display: inline-block;
+}
+	
+.golem-wrap .section {
+	display: none;
+	padding: 20px 30px;
+	background: #FFF;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	min-height: 1000px;
+	border: 1px solid #ddd;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.05);*/
+}
+	
+.golem-wrap .section .sub-menu {
+    float: left;
+    width: 100%;
+    margin: 0px 0 10px 0;
+}
+	
+.golem-wrap .section .sub-menu ul {
+    padding: 0;
+    margin: 0;
+}
+	
+.golem-wrap .section .sub-menu ul li {
+    float: left;
+}
+	
+.golem-wrap .section .sub-menu ul li a {
+    background: #fffffe;
+    margin-right: 10px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    color: #aaa;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: .3s;
+}
+
+.golem-wrap .section .sub-menu ul li a.hide {
+	display: none;
+}
+	
+.golem-wrap .section .sub-menu ul li a i {
+    font-size: 15px;
+    margin-right: 4px;
+}
+	
+.golem-wrap .section .sub-menu ul li a:hover {
+	color: #c9854c;
+	border: 1px solid #c9854c;
+}
+	
+.golem-wrap .section .sub-menu ul li a.active {
+    background: #c9854c;
+    color: #FFF;
+    border-color: #c9854c;
+}
+	
+.golem-wrap .section .sub-tab {
+	display: none;
+}
+	
+.golem-wrap .section .sub-tab.active {
+	display: block;
+}
+	
+.golem-wrap .section.active {
+	display: block;
+}
+
+.golem-wrap .section .title {
+    display: block;
+    font-size: 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px dashed #dddddd;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.golem-wrap .section .title i {
+    font-size: 26px;
+    color: #c9854c;
+    position: relative;
+    bottom: -4px;
+    margin-right: 5px;
+}
+
+.golem-wrap .section .field {
+	display: flex;
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.golem-wrap .section .field:last-child {
+    border: 0 !important;
+}
+	
+.golem-wrap .section .field label {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.golem-wrap .section .field.paper .column-2 label {
+	font-weight: 500;
+}
+
+.golem-wrap .section .field .desc {
+	font-size: 13px;
+	color: #999;
+	font-style: italic;
+	padding-right: 35px;
+	display: block;
+}
+
+.golem-wrap .section .field .desc strong {
+    color: #c9854c;
+}
+
+.golem-wrap .section .field .column {
+	width: 49%;
+	display: inline-block;
+}
+
+.golem-wrap .section .field .glm-upload .glm-img-prev {
+    display: block;
+}
+
+.golem-wrap .section .field .glm-upload input {
+    display: none !important;
+}
+	
+.golem-wrap .section .field .upload-btn {
+    background: #c9854c;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #c9854c;
+    font-weight: 500;
+    padding: 10px 16px;
+    margin-top: 7px;
+    margin-left: 0;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.golem-wrap .section .field .remove-btn {
+    background: transparent;
+    color: #999;
+    display: inline-block;
+    border: 1px solid #eee;
+    font-weight: 500;
+    padding: 9px 16px;
+    margin-top: 7px;
+    margin-left: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+	transition: .3s
+}
+
+.golem-wrap .section .field .remove-btn:hover {
+    border: 1px solid #FF5722;
+	color: #FF5722;
+}
+
+
+.golem-wrap .section .field .img-prev {
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    max-width: 150px;
+	max-height: 90px;
+}
+
+.golem-wrap .section .field textarea {
+    box-shadow: none;
+    padding: 10px 15px;
+    line-height: 22px;
+    border-color: #ddd;
+    min-height: 90px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+	
+.golem-wrap .section .field input[type="text"] {
+	box-shadow: none;
+	padding: 10px 22px;
+	border-color: #ddd;
+	border-radius: 35px;
+	width: 100%;
+}
+
+.golem-wrap .section .field.paper input[type="text"] {
+    padding: 0;
+}
+
+/* GOLEM COMPONENTS */
+	
+.golem-wrap .section .glm-header-img input {
+    display: none;
+}
+	
+.golem-wrap .section .glm-header-img input:checked label {
+    border: 1px solid #c9854c;
+}
+
+.golem-wrap .section .full-width.field {
+    display: block !important;
+}
+
+.golem-wrap .section .full-width.field .column.column-1, 
+.golem-wrap .section .full-width.field .column.column-2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.golem-wrap .section .glm-header-img label {
+box-sizing: border-box;
+    line-height: 0;
+    padding-bottom: 0;
+    opacity: 0.7;
+    transition: .3s;
+    width: 50%;
+    margin: 0 auto;
+    -webkit-filter: grayscale(100%);
+	filter: url(data:image/svg+xml;utf8,#grayscale);
+    filter: gray;
+    filter: grayscale(1);
+    blend-mode: multiply;
+}
+
+.golem-wrap .section .glm-header-img label img {
+    width: 100%;
+}
+
+.golem-wrap .section .glm-header-img input:checked + label {
+    display: block;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    line-height: 0;
+    opacity: 1;
+    width: 100%;
+	-webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+    -webkit-filter: initial !important;
+    filter: none !important;
+}
+	
+.golem-wrap .section .glm-on-off {
+    display: inline-block;
+    border-radius: 30px;
+    background: #fffffe;
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+
+.golem-wrap .section .glm-on-off label {
+    display: inline-block !important;
+    background: #fffffe;
+    color: #ccc;
+    padding: 12px 15px 12px !important;
+    line-height: 1;
+    border-radius: 20px;
+    font-weight: 500 !important;
+}
+
+.golem-wrap .section .glm-on-off input {
+    display: none;
+}
+	
+.golem-wrap .section .glm-on-off input:checked + label {
+    background: #c9854c;
+    border-radius: 20px;
+	    color: #FFF;
+}
+
+.golem-wrap .section .glm-color {
+    position: relative;
+}
+
+.golem-wrap .section .glm-color input[type="text"] {
+    padding: 7px 23px 6px 50px !important;
+    position: relative;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    width: 70px;
+}
+
+.golem-wrap .section .glm-color input[type="text"].open {
+    padding: 7px 22px 6px 78px !important;
+    color: inherit;
+    width: 100%;
+}
+
+.golem-wrap .section .glm-code {
+    position: relative;
+    display: block;
+    height: 800px;
+    width: 100%;
+    z-index: 1;
+}
+
+.glm-site-bg {
+    display: inline-block;
+    width: 62px;
+    height: 31px;
+    border-radius: 90px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-clip: content-box;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+.glm-site-bg .color-preview-box {
+    display: inline-block;
+    width: 60px;
+    height: 29px;
+    border-radius: 90px;
+    vertical-align: middle;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.glm-slider input {
+    width: 80px !important;
+    margin-top: 1px;
+}
+
+span.glm-color {
+    height: 100px;
+    display: block;
+}
+
+.glm-color-block{
+    width: 380px !important;
+    height: 250px !important;
+	border: solid 1px #ddd !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    margin-top: 5px !important;
+	background: #ffffff !important;
+	box-shadow: none !important;
+}
+
+.glm-color-block .jQWCP-wPreview {
+	display: none !important;
+}
+
+.glm-slider paper-slider paper-input {
+    box-shadow: none;
+    padding: 0 0 0 10px !important;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    width: 98px !important;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.glm-slider paper-slider paper-input .underline {
+    display: none;
+}
+
+.glm-slider paper-slider paper-input-container {
+    display: block;
+    padding: 3px 0;
+}
+
+.glm-slider paper-slider {
+    width: 100%;
+}
+
+.glm-slider input {
+    width: 80px !important;
+    text-align: center;
+	margin-top: 6px;
+}
+
+.glm-slider #sliderKnobInner {
+    background-color: #c9854c !important;
+    border: 2px solid #c9854c !important;
+}
+
+.glm-slider #primaryProgress {
+    background: #c9854c !important;
+}
+
+.glm-dropdown > input {
+	display: none !important;
+}
+
+.glm-dropdown .unfocused-line {
+    background: #dddddd !important;
+}
+
+.glm-dropdown paper-dropdown-menu {
+    width: 100%;
+}
+
+.golem-wrap .save {
+	cursor: pointer;
+	background: #8BC34A;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	display: inline-block;
+	padding: 11px 30px;
+	text-decoration: none!important;
+	position: relative;
+	font-weight: 600;
+	transition: .3s;
+}
+
+.golem-wrap .save:hover {
+	background-color: #7db33e;
+	color: #fff;
+}
+	
+.golem-wrap .glm-footer {
+    float: left;
+    background: #fffffe;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 12px;
+	border: 1px solid #ddd;
+}
+	
+.golem-wrap .glm-footer .save {
+    float: right;
+}
+
+.golem-wrap input[type="text"] {
+	box-shadow: none;
+	padding: 10px;
+	border-color: #ddd;
+	border-radius: 35px;
+}
+	
+/* DARK */
+	
+body.dark {
+    background: #020202 !important;
+}
+
+body.dark #adminmenu, 
+body.dark #adminmenuback, 
+body.dark #adminmenuwrap {
+    background-color: #020202 !important;
+    border-right: 1px solid #22282d !important;
+}
+	
+.golem-wrap.dark .glm-header .logo {    display: inline-block;
+    position: relative;
+    top: 3px;
+    background-size: 126px  !important;
+    background: url(/wp-content/uploads/2019/05/golem-logo-v3-white.png) no-repeat center;
+}
+	
+.golem-wrap.dark {
+    color: #bbb;
+}
+	
+.golem-wrap.dark .glm-header {
+    background-color: #000 !important;
+    border-bottom: 1px solid #22282d !important;
+}
+	
+.golem-wrap.dark .section {
+    background: #000 !important;
+    border: 1px solid #22282d !important;
+}
+	
+.golem-wrap.dark .glm-menu li a {
+    background: #000 !important;
+    border: 1px solid #22282d !important;
+}
+	
+.golem-wrap.dark .glm-footer {
+    background: #000000 !important;
+    border: 1px solid #22282d !important;
+}
+	
+.golem-wrap.dark .section .sub-menu ul li a {
+    background: #000000;
+    border: 1px solid #22282d;
+}
+	
+.golem-wrap.dark .section .glm-on-off {
+    background: #000000;
+    border: 1px solid #22282d;
+}
+	
+.golem-wrap.dark .section .glm-on-off label {
+    background: #000000;
+}
+	
+.golem-wrap.dark .section .field input[type="text"] {
+    border-color: #22282d;
+    background: #000;
+    color: #aaa;
+}
+
+.golem-wrap.dark .section .field input[data-wheelcolorpicker] {
+    background: transparent;
+}
+	
+.golem-wrap.dark .section .title {
+    border-bottom: 1px dashed #22282d;
+}
+	
+.golem-wrap.dark .section .field {
+    border-bottom: 1px solid #22282d;
+}
+	
+.golem-wrap.dark .glm-header .btn a {
+    background: #000;
+    border: 1px solid #22282d;
+}
+	
+.golem-wrap.dark .glm-header .btn a.theme-switch {
+    border: 0 !important;
+}
+
+.golem-wrap .glm-header .btn a.theme-switch input:checked + label {
+    color: #c9854c;
+}
+
+.golem-wrap.dark .glm-menu li a.active, 
+.golem-wrap.dark .glm-menu li a.active:hover {
+    color: #fff;
+    background: #c9854c !important;
+}
+	
+.golem-wrap.dark .section .sub-menu ul li a.active {
+    background: #c9854c !important;
+    border: 1px solid #c9854c !important;
+}
+
+.golem-wrap.dark .section .glm-style-box {
+    background: #020202 !important;
+    border: 1px solid #020202 !important;
+    box-shadow: none;
+}
+
+.golem-wrap.dark .glm-font-box .glm-font-prev {
+    border: 1px solid #22282d;
+}
+
+.golem-wrap.dark .section .field textarea {
+    color: #FFF;
+}
+
+.golem-wrap.dark .font-select > a {
+    border-bottom: 1px solid #22282d;
+    color: #ddd;
+}
+
+.golem-wrap.dark .font-select .fs-drop {
+    background: #020202;
+    border: 1px solid #22282d;
+    z-index: 999;
+}
+ 
+.golem-wrap.dark .font-select-active > a {
+    border-bottom: 1px solid #22282d;
+}

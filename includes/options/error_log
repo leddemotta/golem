@@ -1,0 +1,4 @@
+[16-May-2019 03:28:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_option() in /home1/isasal90/golem.isasalmen.com/wp-content/themes/golem/includes/options/glm-options-header.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/isasal90/golem.isasalmen.com/wp-content/themes/golem/includes/options/glm-options-header.php on line 13

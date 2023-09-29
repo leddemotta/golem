@@ -1,0 +1,311 @@
+/*
+Theme Name: Golem
+Description: Full customizable multi-purpose template.
+Author: Dream Data
+Theme URI: http://golem.com.br/
+Author URI: http://golem.com.br/about
+Version: 1.0.0
+License: 
+License URI: 
+Text Domain: golem
+*/
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+ 
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+ 
+/* Import a basic layout */
+@import url('styles/2c-r.css');
+ 
+/* Basic WordPress Styles */
+@import url('styles/wp.css');
+ 
+ 
+
+/* =Menu
+-------------------------------------------------------------- */
+ 
+#access {
+        margin: 0 0 1.5em 0;
+        overflow: auto;
+}
+.skip-link {
+        display: none;
+}
+.menu ul {
+        list-style: none;
+        margin: 0;
+}
+.menu ul ul {
+        display: none;
+}
+.menu li {
+        display: inline;
+}
+.menu a {
+        display: block;
+        float: left;
+}
+ 
+/* =Content
+-------------------------------------------------------------- */
+ 
+.post {
+        margin: 0 0 3em 0;
+}
+.entry-content, .entry-summary {
+        margin: 1.5em 0 0 0;
+}
+ 
+/* =Navigation
+-------------------------------------------------------------- */
+ 
+.navigation {
+        margin: 0 0 1.5em 0;
+        overflow: auto;
+}
+ 
+/* =Widget Areas
+-------------------------------------------------------------- */
+ 
+.widget-area ul {
+        list-style: none;
+        margin-left: 0;
+}
+.widget-area ul ul {
+        list-style: disc;
+        margin-left: 1.1em;
+}
+.widget-area ul ul ul {
+        margin-left: 2.5em;
+}
+.widget-container {
+        margin: 0 0 1.5em 0;
+}
+
+/* Font */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+}
+
+div {
+    display: block;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    cursor: auto;
+    user-select: text !important;
+    font-family: "Open Sans", Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size:  30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size:  24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size:  20px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size:  16px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size:  16px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size:  16px;
+    font-weight: 700;
+}
+
+#main {
+    padding: 40px 0;
+    float: left;
+    width: 100%;
+}
+#content {
+    float: left;
+    width: 72%;
+    padding-right: 50px;
+}
+
+.glm-clear {
+    clear: both;
+}
+
+.glm-box {
+    margin: 0 auto;
+    zoom: 1;
+    max-width: 1170px;
+}
+
+.glm-box.full {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+#glm-boxed .glm-box {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.glm-menu-full {
+    background: #fff;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #eee;
+    border-width: 0px 0px 1px 0px;
+}
+
+.glm-menu-full ul li a {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "open sans";
+    transition: .3s;
+}
+
+.glm-menu-full ul li.current-menu-item a, .glm-menu-full ul li a:hover {
+    color: #c98750;
+}
+
+.glm-menu.side-menu {
+    font-size: 28px;
+}
+
+#glm-top-bar {
+    background: #c98750;
+    padding: 10px;
+    color: #FFF;
+}
+
+#glm-top-bar .content-right {
+    float: right;
+}
+
+#glm-top-bar .content-right ul li {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+#glm-top-bar .content-left ul li {
+    padding-right: 30px;
+    display: inline-block;
+}
+
+#glm-top-bar a {
+    color: #FFF;
+}
+
+.glm-menu {
+    float: right;
+    margin-top: 17px;
+}
+
+.glm-main-menu ul {
+    line-height: 1;
+}
+
+.glm-menu ul li {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.glm-menu ul li a {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "open sans";
+    transition: .3s;
+}
+
+.glm-menu ul li.current-menu-item a, .glm-menu ul li a:hover {
+    color: #c98750;
+}
+
+ul.glm-socials {
+    display: inline-block;
+}
+
+ul.glm-socials li {
+    padding-right: 16px !important;
+}
+
+ul.glm-socials li a {
+    font-size: 16px;
+}
+
+#header {
+    float: left;
+    width: 100%;
+}
+
+.glm-header {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+}
+
+.glm-menu-full ul li {
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.glm-sidebar {
+    float: right;
+    width: 28%;
+}
+
+#footer {
+    background: #222;
+    padding: 20px;
+    color: #FFF;
+}
+
+
